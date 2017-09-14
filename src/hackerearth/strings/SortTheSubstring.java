@@ -15,13 +15,23 @@ public class SortTheSubstring {
 	            int ei=k.nextInt();
 	            int l=s.length();
 	            String str1 = s.substring(0,si);
-	            String str2 = s.substring(si+ei,l);
+	            System.out.println(str1);
+	            String str2 = s.substring(ei,l);
+	            System.out.println(str2);
 	            String str3 = s.substring(si,ei);
+	            System.out.println(str3);
 	            //int l3=str3.length();
 	            char  ch[]=new char[ei-si];
 	            ch=str3.toCharArray();
 	            
-	            Arrays.sort(ch);
+	            
+	            Set ss=new SortedSet();
+	            for(char kapilc:ch)
+	            {
+	            	al.add(kapilc);
+	            }
+	            
+	            Collections.reverse(al);
 	            String sstr = String.valueOf(ch);
 	            String finals = str1 + sstr + str2;
 	            System.out.println(finals);
