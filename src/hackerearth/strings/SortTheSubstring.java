@@ -21,7 +21,7 @@ public class SortTheSubstring {
 	            String str3 = s.substring(si,ei+1);
 	            System.out.println("the third string is  "+str3);
 	            //int l3=str3.length();
-	            char  ch[]=new char[ei-si];
+	       char  ch[]=new char[ei-si];
 	            ch=str3.toCharArray();
 	
 	            Arrays.sort(ch);
@@ -32,7 +32,7 @@ public class SortTheSubstring {
 	            sb.reverse();
 	            System.out.println("after sorting in *reversing order i.e in decending order* "+sb);
 	            String finals = str1 + sb + str2;
-	            System.out.println(finals);
+	            System.out.println(finals);     
 	        }
 	        
 	        
